@@ -1,0 +1,194 @@
+<?php
+session_start();
+if (!isset($_SESSION["login"]) || $_SESSION["login"] !== true) {
+    header("Location: ../index.php");
+    exit;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/504729ba/bootstrap-4-latest.min.css'>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/JacobLett/bootstrap4-latest/504729ba/bootstrap-4-latest.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="text.css">
+    <title> ADD CURL PANEL AMANGXD</title>
+    <style>
+        @font-face {
+      font-family: 'ibm';
+      src: url('https://saweria.co/ibm-plex-mono-latin-400.woff');
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'ibm';
+    }
+    body {
+    background-color: #f6a1b6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.panel {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    flex: 1;
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style umum untuk halaman */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6a1b6; /* Warna latar belakang */
+    color: #ecf0f1; /* Warna teks */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style untuk panel input */
+.panel {
+    background: #808080;
+      box-shadow: 0.4rem 0.4rem 0 #222;
+      border: 1px solid #000;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.panel label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.panel input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #2c3e50; /* Warna border */
+    border-radius: 4px;
+    background-color: #ecf0f1; /* Warna input */
+    color: #34495e; /* Warna teks input */
+}
+
+.panel .button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel button {
+    flex: 1;
+      background: #ff7f00;
+      box-shadow: 0.4rem 0.4rem 0 #222;
+      border: 1px solid #000;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.panel button:hover {
+    background-color: #2980b9; /* Warna tombol saat dihover */
+}
+
+/* Style untuk tombol setelah proses pembuatan web baru */
+.success-buttons {
+    margin-top: 15px;
+}
+
+.success-buttons button {
+    background-color: #3498db; /* Warna tombol */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.success-buttons button:hover {
+    background-color: #2980b9; /* Warna tombol saat dihover */
+}
+</style>
+
+</head>
+<body>
+<div class="panel">
+<div class="form">
+<form id="addCurlForm">
+         <img src="https://telegra.ph/file/10cc902c35a1e246527fd.jpg" alt="Logo Image" class="w-full rounded-lg" draggable="false">
+        <div>
+        </br>
+                        <label for="full_name" class="block font-medium">Your Apii</label>
+                        <div class="flex items-center mt-1">
+     
+                            <input class="form-control" type="text" id="api" placeholder="masukan apii php"
+                        </div>
+                        </div>
+                        </div>
+                        
+  <div class="button-group">                          
+            <button type="submit" name="action">Tambah Panel</button>
+            
+        </div>
+    </form>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>
